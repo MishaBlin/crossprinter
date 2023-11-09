@@ -113,6 +113,10 @@ if len(init_lst) != len(processed_lst):
     print("Number of files in initial directory must be equal to number of files in processed directory.")
     exit(0)
 
+if len(init_lst) == 0:
+    print("The directories cannot be empty.")
+    exit(0)
+
 print()
 for i in range(len(init_lst)):
     print(f"Drawing test {i}:", end=" ")
